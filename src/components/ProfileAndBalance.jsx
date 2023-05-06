@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import bgImage from '../assets/images/bgImage.jpg';
 import userImage from '../assets/images/download.jpeg';
 
 const ProfileAndBalance = () => {
@@ -13,7 +14,14 @@ const ProfileAndBalance = () => {
     }
 
     return (
-        <div className='rounded-3xl bg-rose-500 shadow-md shadow-rose-300'>
+        <div
+            className='rounded-3xl bg-rose-500 shadow-md shadow-rose-300'
+            style={{
+                backgroundImage: `url(${bgImage})`,
+                backgroundPosition: 'center',
+                backgroundSize: 'cover',
+            }}
+        >
             <div className='w-[40%] h-[20px] rounded-b-2xl bg-gray-50 mx-auto'></div>
             <div className='px-3 py-6'>
                 <div

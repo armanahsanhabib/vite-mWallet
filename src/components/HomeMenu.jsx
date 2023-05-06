@@ -1,9 +1,17 @@
 import React from 'react';
+import bgImage from "../assets/images/bgImage.jpg";
 import HomeImage from "../assets/images/home.png";
 
 const HomeMenu = (props) => {
     return (
-        <div className='w-full py-3 bg-rose-500 flex justify-center items-center rounded-b-3xl'>
+        <div
+            className='w-full py-3 bg-rose-500 flex justify-center items-center rounded-b-3xl'
+            style={{
+                backgroundImage: `url(${bgImage})`,
+                backgroundPosition: 'bottom',
+                backgroundSize: 'cover',
+            }}
+        >
             <div
                 className='h-12 w-12 bg-gray-50 shadow cursor-pointer border-2 border-rose-600 rounded-full flex justify-center items-center'
                 onClick={() => props.handleHomeMenuClick()}

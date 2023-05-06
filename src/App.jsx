@@ -24,7 +24,7 @@ function App() {
   return (
     <div className="bg-slate-200 h-screen flex justify-center items-center">
       <div className='h-[700px] w-[380px] p-3 bg-gray-50 rounded-3xl border-4 border-rose-400 shadow-lg shadow-rose-300'>
-        <div className='border-2 border-gray-200 h-full rounded-3xl flex flex-col justify-between'>
+        <div className='border-2 border-rose-300 h-full rounded-3xl flex flex-col justify-between'>
           <div>
             <ProfileAndBalance />
             {
